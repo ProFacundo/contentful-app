@@ -5,7 +5,7 @@ import { useState } from "react";
 const client = createClient({
   space: "pyse4n40mvrf",
   environment: "master",
-  accessToken: "mFRY7Gb99j0Y1kmGksJj85clOyNihWuvc_TUqhp8K0o",
+  accessToken: import.meta.env.VITE_API_KEY,
 });
 
 export const useFectchProjects = () => {
